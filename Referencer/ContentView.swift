@@ -11,18 +11,22 @@ import SwiftUI
 struct ContentView: View {
     var wave: Wave
     var body: some View {
-        VStack(alignment: .leading) {
-            Image("teahupoo").border(Color.green, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-            Text(wave.name)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            Text(wave.country)
-                .font(.title)
-                .fontWeight(.semibold)
-            Text(wave.type)
-            Text("Left: \(wave.left)")
-            Text("Right: \(wave.right)")
+        ZStack{
+            Color(hue: 0.584, saturation: 0.889, brightness: 0.504).edgesIgnoringSafeArea(.all)
+            VStack(alignment: .leading) {
+                Image("teahupoo").resizable().aspectRatio(contentMode: .fit).frame(width: 370.0).border(Color(hue: 0.584, saturation: 0.889, brightness: 0.504), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                Text(wave.name)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Text(wave.country)
+                    .font(.title)
+                    .fontWeight(.semibold)
+                Text(wave.type)
+                Text("Left: \(wave.left)")
+                Text("Right: \(wave.right)")
 
+            }
+            .padding(.all, 50.0)
         }
     }
 }
@@ -30,5 +34,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(wave: Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "Ripping", right: "Death"))
+            
     }
 }
