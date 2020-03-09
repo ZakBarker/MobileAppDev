@@ -6,8 +6,6 @@
 //  Copyright © 2020 Zak Barker. All rights reserved.
 //
 
-import Foundation
-
 class Wave {
     var name: String
     var country: String

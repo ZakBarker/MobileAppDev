@@ -10,6 +10,7 @@ import XCTest
 @testable import Referencer
 
 class ReferencerTests: XCTestCase {
+    var wave = Wave(name: "d", country: "f", type: "ff", left: "fff", right: "ffff")
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,6 +23,7 @@ class ReferencerTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertTrue(wave.name == "d")
     }
 
     func testPerformanceExample() {

@@ -9,13 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    var wave: Wave
     var body: some View {
-        Text("Hello, World!")
+        VStack(alignment: .leading){
+            Image("Teahupo'o")
+            Text(wave.country)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(wave: Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "Ripping", right: "Death"))
     }
 }
