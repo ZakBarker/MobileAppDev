@@ -11,9 +11,18 @@ import SwiftUI
 struct ContentView: View {
     var wave: Wave
     var body: some View {
-        VStack(alignment: .leading){
-            Image("Teahupo'o")
+        VStack(alignment: .leading) {
+            Image("teahupoo").border(Color.green, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+            Text(wave.name)
+                .font(.largeTitle)
+                .fontWeight(.bold)
             Text(wave.country)
+                .font(.title)
+                .fontWeight(.semibold)
+            Text(wave.type)
+            Text("Left: \(wave.left)")
+            Text("Right: \(wave.right)")
+
         }
     }
 }
