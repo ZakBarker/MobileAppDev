@@ -15,6 +15,12 @@
 		76C0411024164CD9008611F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C0410E24164CD9008611F0 /* LaunchScreen.storyboard */; };
 		76C0411B24164CD9008611F0 /* ReferencerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C0411A24164CD9008611F0 /* ReferencerTests.swift */; };
 		76C0412624164CD9008611F0 /* ReferencerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C0412524164CD9008611F0 /* ReferencerUITests.swift */; };
+		76C04136241650FD008611F0 /* teahupoox3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C04133241650FD008611F0 /* teahupoox3.jpg */; };
+		76C04137241650FD008611F0 /* teahupoox1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C04134241650FD008611F0 /* teahupoox1.jpg */; };
+		76C04138241650FD008611F0 /* teahupoox2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C04135241650FD008611F0 /* teahupoox2.jpg */; };
+		76C0413A2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
+		76C0413B2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
+		76C0413C2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,10 @@
 		76C0412124164CD9008611F0 /* ReferencerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReferencerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C0412524164CD9008611F0 /* ReferencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencerUITests.swift; sourceTree = "<group>"; };
 		76C0412724164CD9008611F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C04133241650FD008611F0 /* teahupoox3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = teahupoox3.jpg; path = Assets.xcassets/teahupoox3.jpg; sourceTree = "<group>"; };
+		76C04134241650FD008611F0 /* teahupoox1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = teahupoox1.jpg; path = Assets.xcassets/teahupoox1.jpg; sourceTree = "<group>"; };
+		76C04135241650FD008611F0 /* teahupoox2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = teahupoox2.jpg; path = Assets.xcassets/teahupoox2.jpg; sourceTree = "<group>"; };
+		76C041392416519C008611F0 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +113,13 @@
 				76C0410524164CD9008611F0 /* SceneDelegate.swift */,
 				76C0410724164CD9008611F0 /* ContentView.swift */,
 				76C0410924164CD9008611F0 /* Assets.xcassets */,
+				76C04134241650FD008611F0 /* teahupoox1.jpg */,
+				76C04135241650FD008611F0 /* teahupoox2.jpg */,
+				76C04133241650FD008611F0 /* teahupoox3.jpg */,
 				76C0410E24164CD9008611F0 /* LaunchScreen.storyboard */,
 				76C0411124164CD9008611F0 /* Info.plist */,
 				76C0410B24164CD9008611F0 /* Preview Content */,
+				76C041392416519C008611F0 /* Wave.swift */,
 			);
 			path = Referencer;
 			sourceTree = "<group>";
@@ -241,8 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C0411024164CD9008611F0 /* LaunchScreen.storyboard in Resources */,
+				76C04136241650FD008611F0 /* teahupoox3.jpg in Resources */,
+				76C04138241650FD008611F0 /* teahupoox2.jpg in Resources */,
 				76C0410D24164CD9008611F0 /* Preview Assets.xcassets in Resources */,
 				76C0410A24164CD9008611F0 /* Assets.xcassets in Resources */,
+				76C04137241650FD008611F0 /* teahupoox1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C0413A2416519C008611F0 /* Wave.swift in Sources */,
 				76C0410424164CD9008611F0 /* AppDelegate.swift in Sources */,
 				76C0410624164CD9008611F0 /* SceneDelegate.swift in Sources */,
 				76C0410824164CD9008611F0 /* ContentView.swift in Sources */,
@@ -277,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C0413B2416519C008611F0 /* Wave.swift in Sources */,
 				76C0411B24164CD9008611F0 /* ReferencerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C0413C2416519C008611F0 /* Wave.swift in Sources */,
 				76C0412624164CD9008611F0 /* ReferencerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
