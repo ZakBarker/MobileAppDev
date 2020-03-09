@@ -25,9 +25,12 @@ class ReferencerTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testWave() {
+    func testWaveTitles() {
         XCTAssertEqual(wave.name, "South Straddie")
         XCTAssertEqual(wave.country, "Australia")
+    }
+    
+    func textWaveDetails() {
         XCTAssertEqual(wave.type, "Beach Break")
         XCTAssertEqual(wave.left, "Average")
         XCTAssertEqual(wave.right, "Sick Barrels")

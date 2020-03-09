@@ -21,4 +21,5 @@ class Wave {
         self.right = right
     }
     
+    
 }
