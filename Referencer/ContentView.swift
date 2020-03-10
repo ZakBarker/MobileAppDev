@@ -22,9 +22,17 @@ struct ContentView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                 Text(wave.type)
-                Text("Left: \(wave.left)")
-                Text("Right: \(wave.right)")
+                HStack {
+                    Text("Left:    ")
+                        .fontWeight(.bold)
+                    Text(wave.left)
 
+                }
+                HStack {
+                    Text("Right: ")
+                        .fontWeight(.bold)
+                    Text(wave.right)
+                }
             }
             .padding(.all, 50.0)
         }
