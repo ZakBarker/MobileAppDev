@@ -28,15 +28,15 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(wave.country, "Australia")
     }
     
-    func textWaveType() {
+    func testWaveType() {
         XCTAssertEqual(wave.type, "Beach Break")
     }
     
-    func textWaveLeft() {
+    func testWaveLeft() {
         XCTAssertEqual(wave.left, "Average")
     }
     
-    func textWaveRight() {
+    func testWaveRight() {
         XCTAssertEqual(wave.right, "Sick Barrels")
     }
 
