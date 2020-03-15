@@ -19,6 +19,7 @@
 		76C0413B2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
 		76C0413C2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
 		76EB113D241DE94700E9FCE3 /* WaveList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EB113C241DE94700E9FCE3 /* WaveList.swift */; };
+		76EB1143241DED4200E9FCE3 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EB1142241DED4200E9FCE3 /* MasterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		76C0412724164CD9008611F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C041392416519C008611F0 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		76EB113C241DE94700E9FCE3 /* WaveList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveList.swift; sourceTree = "<group>"; };
+		76EB1142241DED4200E9FCE3 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				76C0410324164CD9008611F0 /* AppDelegate.swift */,
 				76C0410524164CD9008611F0 /* SceneDelegate.swift */,
+				76EB1142241DED4200E9FCE3 /* MasterView.swift */,
 				76C0410724164CD9008611F0 /* ContentView.swift */,
 				76C0410924164CD9008611F0 /* Assets.xcassets */,
 				76C0410E24164CD9008611F0 /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EB1143241DED4200E9FCE3 /* MasterView.swift in Sources */,
 				76C0413A2416519C008611F0 /* Wave.swift in Sources */,
 				76C0410424164CD9008611F0 /* AppDelegate.swift in Sources */,
 				76C0410624164CD9008611F0 /* SceneDelegate.swift in Sources */,
