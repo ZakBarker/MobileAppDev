@@ -23,15 +23,19 @@ struct ContentView: View {
                     .fontWeight(.semibold)
                 Text(wave.type)
                 HStack {
-                    Text("Left:    ")
+                    Text("Left:")
                         .fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
                     Text(wave.left)
+                        .multilineTextAlignment(.leading)
 
                 }
                 HStack {
-                    Text("Right: ")
+                    Text("Right:")
                         .fontWeight(.bold)
+                        .multilineTextAlignment(.trailing)
                     Text(wave.right)
+                        .multilineTextAlignment(.leading)
                 }
             }
             .padding(.all, 50.0)

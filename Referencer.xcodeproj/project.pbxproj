@@ -18,6 +18,7 @@
 		76C0413A2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
 		76C0413B2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
 		76C0413C2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
+		76EB113D241DE94700E9FCE3 /* WaveList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EB113C241DE94700E9FCE3 /* WaveList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		76C0412524164CD9008611F0 /* ReferencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencerUITests.swift; sourceTree = "<group>"; };
 		76C0412724164CD9008611F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C041392416519C008611F0 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		76EB113C241DE94700E9FCE3 /* WaveList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				76C0411124164CD9008611F0 /* Info.plist */,
 				76C0410B24164CD9008611F0 /* Preview Content */,
 				76C041392416519C008611F0 /* Wave.swift */,
+				76EB113C241DE94700E9FCE3 /* WaveList.swift */,
 			);
 			path = Referencer;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				76C0410424164CD9008611F0 /* AppDelegate.swift in Sources */,
 				76C0410624164CD9008611F0 /* SceneDelegate.swift in Sources */,
 				76C0410824164CD9008611F0 /* ContentView.swift in Sources */,
+				76EB113D241DE94700E9FCE3 /* WaveList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
