@@ -18,14 +18,21 @@ struct ContentView: View {
                 Text(wave.name)
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                Text(wave.country)
+                Text(wave.country + "\n")
                     .font(.title)
                     .fontWeight(.semibold)
-                Text(wave.type)
                 HStack {
-                    Text("Left:")
+                    Text("Type: ")
                         .fontWeight(.bold)
+                        .multilineTextAlignment(.trailing)
+                    Text(wave.type)
                         .multilineTextAlignment(.leading)
+
+                }
+                HStack {
+                    Text("Left:   ")
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.trailing)
                     Text(wave.left)
                         .multilineTextAlignment(.leading)
 
