@@ -11,7 +11,6 @@ import SwiftUI
 struct MasterView: View {
     var waveList: WaveList
     var body: some View {
-//        Text(waveList.waves[1].name)
         List{
             ForEach(0..<waveList.waves.count) { i in
                 NavigationLink(destination: DetailView(wave: self.waveList.waves[i])) {
@@ -22,8 +21,8 @@ struct MasterView: View {
     }
 }
 
-struct MasterView_Previews: PreviewProvider {
-    static var previews: some View {
-        MasterView(waveList: WaveList())
-    }
-}
+//struct MasterView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MasterView(waveList: WaveList())
+//    }
+//}

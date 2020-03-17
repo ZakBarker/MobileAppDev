@@ -12,13 +12,15 @@ class Wave {
     var type: String
     var left: String
     var right: String
+    var image: String
     
-    init(name: String, country: String, type: String, left: String, right: String){
+    init(name: String, country: String, type: String, left: String, right: String, image: String){
         self.name = name
         self.country = country
         self.type = type
         self.left = left
         self.right = right
+        self.image = image
     }
     
     

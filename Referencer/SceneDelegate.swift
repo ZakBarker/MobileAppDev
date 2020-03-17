@@ -13,8 +13,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     let waveList = WaveList()
-    let wave = Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "Ripping", right: "Death")
-    let wave1 = Wave(name: "Nazare", country: "Portugal", type: "Big Wave", left: "Death", right: "Death")
+    let wave = Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "Ripping", right: "Death", image: "teahupoo")
+    let wave1 = Wave(name: "Nazare", country: "Portugal", type: "Big Wave", left: "Death", right: "Death", image: "nazare")
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
