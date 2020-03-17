@@ -43,6 +43,7 @@ class ReferencerTests: XCTestCase {
 
     func testWaves(){
         XCTAssertEqual(waveList.waves.count, 0)
+
     }
     
     func testPerformanceExample() {
