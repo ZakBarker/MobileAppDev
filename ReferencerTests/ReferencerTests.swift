@@ -11,7 +11,8 @@ import XCTest
 
 class ReferencerTests: XCTestCase {
     var wave = Wave(name: "South Straddie", country: "Australia", type: "Beach Break", left: "Average", right: "Sick Barrels")
-
+    var waveList = WaveList()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -40,6 +41,10 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(wave.right, "Sick Barrels")
     }
 
+    func testWaves(){
+        XCTAssertEqual(waveList.waves.count, 0)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
