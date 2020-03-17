@@ -12,19 +12,17 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var wave = Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "Ripping", right: "Death")
-    var waveList = WaveList()
-    
+    let waveList = WaveList()
+    let wave = Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "Ripping", right: "Death")
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-
+        waveList.waves.append(wave)
+        
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView(wave: wave)
-        let masterView = MasterView(waveList: waveList)
-//        let masterView = MasterView(waveList: waveList)
+        let contentView = ContentView(waveList: waveList)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

@@ -11,7 +11,9 @@ import SwiftUI
 struct MasterView: View {
     var waveList: WaveList
     var body: some View {
-        Text("Hello, World!")
+        List{
+            
+        }
     }
 }
 

@@ -10,8 +10,4 @@ import Foundation
 
 class WaveList{
     var waves: [Wave] = []
-    
-    func addWave(wave: Wave){
-        self.waves.append(wave)
-    }
 }

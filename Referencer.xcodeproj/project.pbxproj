@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		767E69932420CBBC00DCC17F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767E69922420CBBC00DCC17F /* DetailView.swift */; };
 		76C0410424164CD9008611F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C0410324164CD9008611F0 /* AppDelegate.swift */; };
 		76C0410624164CD9008611F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C0410524164CD9008611F0 /* SceneDelegate.swift */; };
 		76C0410824164CD9008611F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C0410724164CD9008611F0 /* ContentView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		767E69922420CBBC00DCC17F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		76C0410024164CD9008611F0 /* Referencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Referencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C0410324164CD9008611F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76C0410524164CD9008611F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				76C0410324164CD9008611F0 /* AppDelegate.swift */,
 				76C0410524164CD9008611F0 /* SceneDelegate.swift */,
+				767E69922420CBBC00DCC17F /* DetailView.swift */,
 				76EB1142241DED4200E9FCE3 /* MasterView.swift */,
 				76C0410724164CD9008611F0 /* ContentView.swift */,
 				76C0410924164CD9008611F0 /* Assets.xcassets */,
@@ -281,6 +284,7 @@
 				76EB1143241DED4200E9FCE3 /* MasterView.swift in Sources */,
 				76C0413A2416519C008611F0 /* Wave.swift in Sources */,
 				76C0410424164CD9008611F0 /* AppDelegate.swift in Sources */,
+				767E69932420CBBC00DCC17F /* DetailView.swift in Sources */,
 				76C0410624164CD9008611F0 /* SceneDelegate.swift in Sources */,
 				76C0410824164CD9008611F0 /* ContentView.swift in Sources */,
 				76EB113D241DE94700E9FCE3 /* WaveList.swift in Sources */,
