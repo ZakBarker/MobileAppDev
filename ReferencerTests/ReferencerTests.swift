@@ -10,7 +10,7 @@ import XCTest
 @testable import Referencer
 
 class ReferencerTests: XCTestCase {
-    var wave = Wave(name: "South Straddie", country: "Australia", type: "Beach Break", left: "Average", right: "Sick Barrels")
+    var wave = Wave(name: "South Straddie", country: "Australia", type: "Beach Break", left: "Average", right: "Sick Barrels", image: "teahupoo")
     var waveList = WaveList()
     
     override func setUp() {

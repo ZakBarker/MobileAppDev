@@ -14,7 +14,14 @@ struct MasterView: View {
         List{
             ForEach(0..<waveList.waves.count) { i in
                 NavigationLink(destination: DetailView(wave: self.waveList.waves[i])) {
-                    Text("\(self.waveList.waves[i].name)")
+                    HStack{
+                        Image("\(self.waveList.waves[i].image)").resizable().frame(width: 70, height: 50)
+                        VStack{
+                            Text("\(self.waveList.waves[i].name)").bold().multilineTextAlignment(.trailing)
+                            Text("\(self.waveList.waves[i].country)")
+
+                        }
+                    }
                 }
             }
         }
