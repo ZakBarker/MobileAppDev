@@ -28,9 +28,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Append Wave Instances to waveList
         
-        waveList.waves.append(wave)
-        waveList.waves.append(wave1)
-        waveList.waves.append(wave2)
+        waveList.addWave(wave: wave)
+        waveList.addWave(wave: wave1)
+        waveList.addWave(wave: wave2)
+
+
+//        waveList.waves.append(wave1)
+//        waveList.waves.append(wave2)
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView(waveList: waveList)

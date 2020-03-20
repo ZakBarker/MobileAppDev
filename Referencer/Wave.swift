@@ -31,6 +31,4 @@ class Wave {
         self.right = right
         self.image = image
     }
-    
-    
 }

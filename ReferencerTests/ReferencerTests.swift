@@ -15,7 +15,7 @@ class ReferencerTests: XCTestCase {
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
+        waveList.addWave(wave: <#T##Wave#>)
     }
 
     override func tearDown() {
@@ -28,7 +28,6 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(wave.type, "Beach Break")
         XCTAssertEqual(wave.left, "Average")
         XCTAssertEqual(wave.right, "Sick Barrels")
-
     }
 
     func testWaves(){
