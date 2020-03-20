@@ -12,7 +12,11 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    // Create Instance of the Class WaveList, this will store an array of Class Wave.
     let waveList = WaveList()
+    
+    // Initialize Wave instances to be appended to waveList
+    
     let wave = Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "One of the best slabs in the world", right: "Death", image: "teahupoo")
     let wave1 = Wave(name: "Nazare", country: "Portugal", type: "Big Wave", left: "Left or right, you will die", right: "Yes, good luck", image: "nazare")
     let wave2 = Wave(name: "Skeleton Bay", country: "Namibia", type: "Point Break", left: "Runs for days", right: "There is no right", image: "skeletonbay")
@@ -21,6 +25,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        // Append Wave Instances to waveList
+        
         waveList.waves.append(wave)
         waveList.waves.append(wave1)
         waveList.waves.append(wave2)

@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+// DetailView Receives instance of Class Wave. This instance stores all of the data for a specific wave and displays this data as GUI implementation specifiec.
+
 struct DetailView: View {
     var wave: Wave
     var body: some View {
@@ -27,7 +29,6 @@ struct DetailView: View {
                                 .multilineTextAlignment(.trailing)
                             Text(wave.type)
                                 .multilineTextAlignment(.leading)
-        
                         }
                         HStack {
                             Text("Left:   ")

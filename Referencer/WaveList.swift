@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Class contains an array which stores data objects of the type Wave. This will be used to provide details to each view.
 class WaveList{
     var waves: [Wave] = []
 }

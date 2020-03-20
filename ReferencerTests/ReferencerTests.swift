@@ -13,41 +13,26 @@ class ReferencerTests: XCTestCase {
     var wave = Wave(name: "South Straddie", country: "Australia", type: "Beach Break", left: "Average", right: "Sick Barrels", image: "teahupoo")
     var waveList = WaveList()
     
-    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        waveList.waves.append(wave: Wave)
-        
+
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testWaveName() {
+    func testWave() {
         XCTAssertEqual(wave.name, "South Straddie")
-    }
-    
-    func testWaveCountry() {
         XCTAssertEqual(wave.country, "Australia")
-    }
-    
-    func testWaveType() {
         XCTAssertEqual(wave.type, "Beach Break")
-    }
-    
-    func testWaveLeft() {
         XCTAssertEqual(wave.left, "Average")
-    }
-    
-    func testWaveRight() {
         XCTAssertEqual(wave.right, "Sick Barrels")
+
     }
 
     func testWaves(){
         XCTAssertEqual(waveList.waves.count, 0)
-
-
     }
     
     func testPerformanceExample() {
