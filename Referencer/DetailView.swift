@@ -19,31 +19,32 @@ struct DetailView: View {
                         Image(wave.image).resizable().aspectRatio(contentMode: .fit).frame(width: 370.0).border(Color(hue: 0.584, saturation: 0.889, brightness: 0.504), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                         Text(wave.name)
                             .font(.largeTitle)
-                            .fontWeight(.bold)
+                            .fontWeight(.bold).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9))
                         Text(wave.country + "\n")
                             .font(.title)
                             .fontWeight(.semibold)
+                            .foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9))
                         HStack {
                             Text("Type: ")
                                 .fontWeight(.bold)
-                                .multilineTextAlignment(.trailing)
+                                .multilineTextAlignment(.trailing).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9))
                             Text(wave.type)
-                                .multilineTextAlignment(.leading)
+                                .multilineTextAlignment(.leading).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9))
                         }
                         HStack {
                             Text("Left:   ")
                                 .fontWeight(.bold)
-                                .multilineTextAlignment(.trailing)
+                                .multilineTextAlignment(.trailing).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9))
                             Text(wave.left)
-                                .multilineTextAlignment(.leading)
+                                .multilineTextAlignment(.leading).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9))
         
                         }
                         HStack {
                             Text("Right:")
                                 .fontWeight(.bold)
-                                .multilineTextAlignment(.trailing)
+                                .multilineTextAlignment(.trailing).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9))
                             Text(wave.right)
-                                .multilineTextAlignment(.leading)
+                                .multilineTextAlignment(.leading).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9))
                         }
                     }
                     .padding(.all, 50.0)
