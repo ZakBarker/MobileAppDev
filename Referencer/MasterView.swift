@@ -16,11 +16,9 @@ struct MasterView: View {
                 NavigationLink(destination: DetailView(wave: self.waveList.waves[i])) {
                     HStack{
                         Image("\(self.waveList.waves[i].image)").resizable().frame(width: 70, height: 50)
-                        VStack{
-                            Text("\(self.waveList.waves[i].name)").bold().multilineTextAlignment(.trailing)
-                            Text("\(self.waveList.waves[i].country)")
+                        Text("\(self.waveList.waves[i].name)").bold().multilineTextAlignment(.leading)
+                        Text("\(self.waveList.waves[i].country)").multilineTextAlignment(.trailing)
 
-                        }
                     }
                 }
             }

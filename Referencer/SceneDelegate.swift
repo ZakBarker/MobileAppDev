@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     let waveList = WaveList()
     let wave = Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "One of the best slabs in the world", right: "Death", image: "teahupoo")
-    let wave1 = Wave(name: "Nazare", country: "Portugal", type: "Big Wave", left: "Left or right, you will die", right: "Yeah good luck", image: "nazare")
+    let wave1 = Wave(name: "Nazare", country: "Portugal", type: "Big Wave", left: "Left or right, you will die", right: "Yes, good luck", image: "nazare")
     let wave2 = Wave(name: "Skeleton Bay", country: "Namibia", type: "Point Break", left: "Runs for days", right: "There is no right", image: "skeletonbay")
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
