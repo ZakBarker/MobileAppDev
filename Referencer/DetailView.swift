@@ -11,15 +11,14 @@ import SwiftUI
 // DetailView Receives instance of Class Wave. This instance stores all of the data for a specific wave and displays this data as GUI implementation specifiec.
 
 struct DetailView: View {
-    var wave: Wave
-    @State var words: String = ""
+    @State var wave: Wave
     var body: some View {
                 ZStack{
                     Color(hue: 0.584, saturation: 0.889, brightness: 0.504).edgesIgnoringSafeArea(.all)
                     VStack(alignment: .leading) {
                         Text("Notes:").font(.largeTitle)
                             .fontWeight(.bold).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -60)
-                        TextField("Hello", text: $words).offset(y: -70)
+                        TextField("Add Some Notes Here", text: $wave.notes).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle()).foregroundColor(.green)
                         Image(wave.image).resizable().aspectRatio(contentMode: .fit).frame(width: 370.0).border(Color(hue: 0.584, saturation: 0.889, brightness: 0.504), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).offset(y: -70)
                         Text(wave.name)
                             .font(.largeTitle)
