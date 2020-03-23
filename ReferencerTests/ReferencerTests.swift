@@ -45,6 +45,8 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(waveList.waves[0].left, "Average")
         XCTAssertEqual(waveList.waves[0].right, "Sick Barrels")
         XCTAssertEqual(waveList.waves[0].image, "teahupoo")
+        XCTAssertEqual(waveList.waves[0].notes, "")
+
     }
     
     // Test AddWave() Method of Class WaveList. Adds 3 new wave instances and verifies that they have been appended
@@ -65,6 +67,7 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(waveList.waves[1].left, "Test Left")
         XCTAssertEqual(waveList.waves[1].right, "Test Right")
         XCTAssertEqual(waveList.waves[1].image, "Test Image")
+        XCTAssertEqual(waveList.waves[1].notes, "")
     }
     func testPerformanceExample() {
         // This is an example of a performance test case.

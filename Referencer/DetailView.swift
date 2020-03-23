@@ -11,6 +11,7 @@ import SwiftUI
 // DetailView Receives instance of Class Wave. This instance stores all of the data for a specific wave and displays this data as GUI implementation specifiec.
 
 struct DetailView: View {
+    // @State variable created for the purpose of Binding with TextField
     @State var wave: Wave
     var body: some View {
                 ZStack{
