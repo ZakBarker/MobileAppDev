@@ -33,6 +33,7 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(wave.left, "Average")
         XCTAssertEqual(wave.right, "Sick Barrels")
         XCTAssertEqual(wave.image, "teahupoo")
+        XCTAssertEqual(wave.notes, "")
     }
 
     // Test the functionality of instances within WaveList array of Waves.
