@@ -19,7 +19,7 @@ struct DetailView: View {
                     VStack(alignment: .leading) {
                         Text("Notes:").font(.largeTitle)
                             .fontWeight(.bold).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -60)
-                        TextField("Add Some Notes Here", text: $wave.notes).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle()).foregroundColor(.green)
+                        TextField("Add Some Notes Here", text: $wave.notes).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle())
                         Image(wave.image).resizable().aspectRatio(contentMode: .fit).frame(width: 370.0).border(Color(hue: 0.584, saturation: 0.889, brightness: 0.504), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).offset(y: -70)
                         Text(wave.name)
                             .font(.largeTitle)
