@@ -8,11 +8,14 @@
 
 import Foundation
 
-// Class contains an array which stores data objects of the type Wave. This will be used to provide details to each view.
-class WaveList{
+/// Class contains an array which stores data objects of the type Wave. This will be used to provide details to each view.
+class WaveList: ObservableObject, Identifiable{
+    /// Stores data objects of type Wave
     var waves: [Wave] = []
     
-    // Function appends new wave to waves array
+    /// Function appends new wave to waves array
+    /// - Parameters:
+    ///     - wave: Instance of type Wave
     func addWave(wave: Wave){
         self.waves.append(wave)
     }
