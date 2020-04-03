@@ -18,7 +18,6 @@
 		76C0412624164CD9008611F0 /* ReferencerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C0412524164CD9008611F0 /* ReferencerUITests.swift */; };
 		76C0413A2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
 		76C0413C2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
-		76EB113D241DE94700E9FCE3 /* WaveList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EB113C241DE94700E9FCE3 /* WaveList.swift */; };
 		76EB1143241DED4200E9FCE3 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EB1142241DED4200E9FCE3 /* MasterView.swift */; };
 		76F873C62436E78F00CF862D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F873C52436E78F00CF862D /* ViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +56,6 @@
 		76C0412524164CD9008611F0 /* ReferencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencerUITests.swift; sourceTree = "<group>"; };
 		76C0412724164CD9008611F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C041392416519C008611F0 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
-		76EB113C241DE94700E9FCE3 /* WaveList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveList.swift; sourceTree = "<group>"; };
 		76EB1142241DED4200E9FCE3 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		76F873C52436E78F00CF862D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +119,6 @@
 				76C0410B24164CD9008611F0 /* Preview Content */,
 				76C041392416519C008611F0 /* Wave.swift */,
 				76F873C52436E78F00CF862D /* ViewModel.swift */,
-				76EB113C241DE94700E9FCE3 /* WaveList.swift */,
 			);
 			path = Referencer;
 			sourceTree = "<group>";
@@ -290,7 +287,6 @@
 				76C0410624164CD9008611F0 /* SceneDelegate.swift in Sources */,
 				76C0410824164CD9008611F0 /* ContentView.swift in Sources */,
 				76F873C62436E78F00CF862D /* ViewModel.swift in Sources */,
-				76EB113D241DE94700E9FCE3 /* WaveList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
