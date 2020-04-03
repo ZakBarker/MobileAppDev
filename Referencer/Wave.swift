@@ -24,6 +24,7 @@ class Wave: ObservableObject, Identifiable {
     @Published var image: String
     /// Notes for wave
     @Published var notes: String
+    @Published var imageURL: String
     
     /// Used to initialize an instance of type Wave
     /// - Parameters:
@@ -35,7 +36,7 @@ class Wave: ObservableObject, Identifiable {
     ///     - image: Image of Wave
     ///     - notes: Notes for wave
     
-    init(name: String, country: String, type: String, left: String, right: String, image: String, notes: String = ""){
+    init(name: String, country: String, type: String, left: String, right: String, image: String, notes: String = "", imageURL: String = ""){
         self.name = name
         self.country = country
         self.type = type
@@ -43,5 +44,6 @@ class Wave: ObservableObject, Identifiable {
         self.right = right
         self.image = image
         self.notes = notes
+        self.imageURL = imageURL
     }
 }

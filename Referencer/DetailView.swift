@@ -21,6 +21,7 @@ struct DetailView: View {
                         Text(dvm.notes).font(.largeTitle)
                             .fontWeight(.bold).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -60)
                         TextField(dvm.notesPlaceholder, text: $wave.notes).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle())
+                        TextField(dvm.imagePlaceholder, text: $wave.imageURL).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle())
                         Image(wave.image).resizable().aspectRatio(contentMode: .fit).frame(width: 370.0).border(Color(hue: 0.584, saturation: 0.889, brightness: 0.504), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).offset(y: -70)
                         TextField(dvm.namePlaceholder, text: $wave.name)
                             .font(.largeTitle)
@@ -29,25 +30,25 @@ struct DetailView: View {
                             .font(.title)
                             .foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -70)
                         HStack {
-                            Text("Type: ")
+                            Text(dvm.type)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.trailing).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -80)
-                            Text(wave.type)
+                            TextField(dvm.typePlaceholder, text: $wave.type)
                                 .multilineTextAlignment(.leading).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -80)
                         }
                         HStack {
-                            Text("Left:   ")
+                            Text(dvm.left)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.trailing).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -80)
-                            Text(wave.left)
+                            TextField(dvm.leftPlaceholder, text: $wave.left)
                                 .multilineTextAlignment(.leading).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -80)
         
                         }
                         HStack {
-                            Text("Right:")
+                            Text(dvm.right)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.trailing).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -80)
-                            Text(wave.right)
+                            TextField(dvm.rightPlaceholder, text: $wave.right)
                                 .multilineTextAlignment(.leading).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -80)
                         }
                     }

@@ -20,8 +20,8 @@
 		76C0413C2416519C008611F0 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C041392416519C008611F0 /* Wave.swift */; };
 		76EB1143241DED4200E9FCE3 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EB1142241DED4200E9FCE3 /* MasterView.swift */; };
 		76F873C62436E78F00CF862D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F873C52436E78F00CF862D /* ViewModel.swift */; };
-		76F874042436EF2700CF862D /* RowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F874032436EF2700CF862D /* RowModel.swift */; };
 		76F874062436EFA800CF862D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F874052436EFA800CF862D /* DetailViewModel.swift */; };
+		76F874082436FE8000CF862D /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F874072436FE8000CF862D /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 		76C041392416519C008611F0 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		76EB1142241DED4200E9FCE3 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		76F873C52436E78F00CF862D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		76F874032436EF2700CF862D /* RowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowModel.swift; sourceTree = "<group>"; };
 		76F874052436EFA800CF862D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		76F874072436FE8000CF862D /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +114,10 @@
 			children = (
 				76C0410324164CD9008611F0 /* AppDelegate.swift */,
 				76C0410524164CD9008611F0 /* SceneDelegate.swift */,
-				767E69922420CBBC00DCC17F /* DetailView.swift */,
-				76EB1142241DED4200E9FCE3 /* MasterView.swift */,
 				76C0410724164CD9008611F0 /* ContentView.swift */,
+				76EB1142241DED4200E9FCE3 /* MasterView.swift */,
+				767E69922420CBBC00DCC17F /* DetailView.swift */,
+				76F874072436FE8000CF862D /* RowView.swift */,
 				76C0410924164CD9008611F0 /* Assets.xcassets */,
 				76C0410E24164CD9008611F0 /* LaunchScreen.storyboard */,
 				76C0411124164CD9008611F0 /* Info.plist */,
@@ -124,7 +125,6 @@
 				76C041392416519C008611F0 /* Wave.swift */,
 				76F873C52436E78F00CF862D /* ViewModel.swift */,
 				76F874052436EFA800CF862D /* DetailViewModel.swift */,
-				76F874032436EF2700CF862D /* RowModel.swift */,
 			);
 			path = Referencer;
 			sourceTree = "<group>";
@@ -288,9 +288,9 @@
 			files = (
 				76EB1143241DED4200E9FCE3 /* MasterView.swift in Sources */,
 				76C0413A2416519C008611F0 /* Wave.swift in Sources */,
-				76F874042436EF2700CF862D /* RowModel.swift in Sources */,
 				76C0410424164CD9008611F0 /* AppDelegate.swift in Sources */,
 				76F874062436EFA800CF862D /* DetailViewModel.swift in Sources */,
+				76F874082436FE8000CF862D /* RowView.swift in Sources */,
 				767E69932420CBBC00DCC17F /* DetailView.swift in Sources */,
 				76C0410624164CD9008611F0 /* SceneDelegate.swift in Sources */,
 				76C0410824164CD9008611F0 /* ContentView.swift in Sources */,
