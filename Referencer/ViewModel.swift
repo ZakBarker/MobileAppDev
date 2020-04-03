@@ -24,4 +24,5 @@ class ViewModel: ObservableObject, Identifiable{
     func removeWave(_ indices: IndexSet){
         indices.forEach { waves.remove(at: $0) }
     }
+    
 }
