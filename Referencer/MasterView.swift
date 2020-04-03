@@ -11,16 +11,16 @@ import SwiftUI
 // MasterView receives waveList data structure from Content View. Masterview displays a list of NavigationLinks which corresponds to each index within the waveList array. It then displays GUI and passes data for each indexed Wave instance to the DetailView.
 
 struct MasterView: View {
-    @ObservedObject var waveList: WaveList
+    @ObservedObject var viewModel: ViewModel
     var body: some View {
         List{
-            ForEach(0..<waveList.waves.count) { i in
-                NavigationLink(destination: DetailView(wave: self.waveList.waves[i])) {
+            ForEach(0..<viewModel.waves.count) { i in
+                NavigationLink(destination: DetailView(wave: self.viewModel.waves[i])) {
                     HStack{
-                        Image("\(self.waveList.waves[i].image)").resizable().frame(width: 70, height: 50)
+                        Image("\(self.viewModel.waves[i].image)").resizable().frame(width: 70, height: 50)
                         VStack(alignment: .leading){
-                            Text("\(self.waveList.waves[i].name)").bold()
-                            Text("\(self.waveList.waves[i].country)")
+                            Text("\(self.viewModel.waves[i].name)").bold()
+                            Text("\(self.viewModel.waves[i].country)")
                                 .font(.footnote)
                         }
                     }
