@@ -15,7 +15,7 @@ struct MasterView: View {
     var body: some View {
         List{
             ForEach(viewModel.waves) { wave in
-                NavigationLink(destination: DetailView(wave: wave)) {
+                NavigationLink(destination: DetailView(wave: wave, dvm: self.viewModel.detailViewModel[0])) {
                     HStack{
                         Image(wave.image).resizable().frame(width: 70, height: 50)
                         VStack(alignment: .leading){

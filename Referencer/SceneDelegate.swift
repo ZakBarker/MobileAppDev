@@ -14,6 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     // Create Instance of the Class WaveList, this will store an array of Class Wave.
     let viewModel = ViewModel()
+    let dvm = DetailViewModel()
     
     // Initialize Wave instances to be appended to waveList
     
@@ -37,7 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         viewModel.waves.append(wave3)
         viewModel.waves.append(wave4)
         viewModel.waves.append(wave5)
-
+        viewModel.detailViewModel.append(dvm)
 
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView(viewModel: viewModel)

@@ -12,7 +12,7 @@ import Foundation
 class ViewModel: ObservableObject, Identifiable{
     /// Stores data objects of type Wave
     @Published var waves: [Wave] = []
-    @Published var detailViewModel: [DetailViewModel]
+    @Published var detailViewModel: [DetailViewModel] = []
     
     /// Function appends new wave to waves array
     /// - Parameters:
