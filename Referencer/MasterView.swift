@@ -31,9 +31,3 @@ struct MasterView: View {
         }
     }
 }
-
-//struct MasterView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MasterView(waveList: WaveList())
-//    }
-//}
