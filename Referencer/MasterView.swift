@@ -14,17 +14,19 @@ struct MasterView: View {
     @ObservedObject var viewModel: ViewModel
     var body: some View {
         List{
-            ForEach(0..<viewModel.waves.count) { i in
-                NavigationLink(destination: DetailView(wave: self.viewModel.waves[i])) {
+            ForEach(viewModel.waves) { wave in
+                NavigationLink(destination: DetailView(wave: wave)) {
                     HStack{
-                        Image("\(self.viewModel.waves[i].image)").resizable().frame(width: 70, height: 50)
+                        Image(wave.image).resizable().frame(width: 70, height: 50)
                         VStack(alignment: .leading){
-                            Text("\(self.viewModel.waves[i].name)").bold()
-                            Text("\(self.viewModel.waves[i].country)")
+                            Text(wave.name).bold()
+                            Text(wave.country)
                                 .font(.footnote)
                         }
                     }
                 }
+            }.onDelete { indices in
+                viewModel.removeWave(indices)
             }
         }
     }

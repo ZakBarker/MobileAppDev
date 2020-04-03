@@ -11,19 +11,19 @@ import Foundation
 
 class Wave: ObservableObject, Identifiable {
     /// Name of Wave
-    var name: String
+    @Published var name: String
     /// Country of Wave
-    var country: String
+    @Published var country: String
     /// Type of Wave
-    var type: String
+    @Published var type: String
     /// Characteristics of left hand Wave
-    var left: String
+    @Published var left: String
     /// Characteristics of right hand Wave
-    var right: String
+    @Published var right: String
     /// Image of Wave
-    var image: String
+    @Published var image: String
     /// Notes for wave
-    var notes: String
+    @Published var notes: String
     
     /// Used to initialize an instance of type Wave
     /// - Parameters:
