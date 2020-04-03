@@ -17,10 +17,10 @@ class ViewModel: ObservableObject, Identifiable{
     /// - Parameters:
     ///     - wave: Instance of type Wave
     func addWave(){
-        self.waves.append(Wave(name: "New", country: "", type: "", left: "", right: "", image: ""))
+        self.waves.append(Wave(name: "New", country: "Wave", type: "", left: "", right: "", image: "snapper"))
     }
     
     func removeWave(_ indices: IndexSet){
-        
+        indices.forEach { waves.remove(at: $0) }
     }
 }

@@ -26,7 +26,7 @@ struct MasterView: View {
                     }
                 }
             }.onDelete { indices in
-                viewModel.removeWave(indices)
+                self.viewModel.removeWave(indices)
             }
         }
     }
