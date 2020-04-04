@@ -23,6 +23,7 @@ struct DetailView: View {
                             .fontWeight(.bold).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -60)
                         TextField(dvm.notesPlaceholder, text: $wave.notes).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle())
                         TextField(dvm.imagePlaceholder, text: $wave.imageURL).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle())
+                        // Image is displayed by calling wave method which returns an Image type.
                         wave.displayImageDetail().resizable().aspectRatio(contentMode: .fit).frame(width: 370.0).border(Color(hue: 0.584, saturation: 0.889, brightness: 0.504), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).offset(y: -70)
                         TextField(dvm.namePlaceholder, text: $wave.name)
                             .font(.largeTitle)

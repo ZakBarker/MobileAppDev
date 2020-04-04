@@ -14,13 +14,16 @@ class ViewModel: ObservableObject, Identifiable{
     @Published var waves: [Wave] = []
     @Published var detailViewModel: [DetailViewModel] = []
     
-    /// Function appends new wave to waves array
     /// - Parameters:
-    ///     - wave: Instance of type Wave
+    ///     - waves: Stores data objects of type Wave
+    ///     - detailViewModel: Stores data objects of type DetailViewModel
+    
+    /// Function appends new wave to waves array
     func addWave(){
         self.waves.append(Wave(name: "New", country: "Wave", type: "", left: "", right: "", staticImage: "snapper"))
     }
     
+    /// Function removes wave from waves array
     func removeWave(_ indices: IndexSet){
         indices.forEach { waves.remove(at: $0) }
     }

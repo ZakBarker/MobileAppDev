@@ -8,38 +8,45 @@
 
 import Foundation
 
-/// Class contains embedded information to be displayed within the view.
+/// Class contains embedded information to be displayed within the view. This is useful in the case that information must be stored in several languages
 class DetailViewModel: ObservableObject, Identifiable{
-    /// Description for Notes
+    /// Embedded information for notes field
     @Published var notes: String
-    /// Placeholder for Notes
+    /// Embedded information for notes placeholder
     @Published var notesPlaceholder: String
-    /// Description for Type of Wave
+    /// Embedded information for type field
     @Published var type: String
-    /// Description for Left
+    /// Embedded information for left field
     @Published var left: String
-    /// Description for Right
+    /// Embedded information for right field
     @Published var right: String
-    /// Name of Wave Placeholder
+    /// Embedded information for name placeholder
     @Published var namePlaceholder: String
-    /// Country of Wave Placeholder
+    /// Embedded information for country placeholder
     @Published var countryPlaceholder: String
-    /// Type of Wave Placeholder
+    /// Embedded information for type placeholder
     @Published var typePlaceholder: String
-    /// Characteristics of left hand Wave Placeholder
+    /// Embedded information for left placeholder
     @Published var leftPlaceholder: String
-    /// Characteristics of right hand Wave Placeholder
+    /// Embedded information for right placeholder
     @Published var rightPlaceholder: String
-    /// Image of Wave Placeholder
+    /// Embedded information for name image url placeholder
     @Published var imagePlaceholder: String
 
     
     /// Used to initialize an instance of type Wave
     /// - Parameters:
-    ///     - notes: Description for Notes
-    ///     - type: Description for Type of Wave
-    ///     - left: Description for Left
-    ///     - right: Description for Right
+    ///     - notes: Embedded information for notes field
+    ///     - notesPlaceholder: Embedded information for notes placeholder
+    ///     - type: Embedded information for type field
+    ///     - left: Embedded information for left field
+    ///     - right: Embedded information for right field
+    ///     - namePlaceholder: Embedded information for name placeholder
+    ///     - countryPlaceholder: Embedded information for country placeholder
+    ///     - typePlaceholder: Embedded information for type placeholder
+    ///     - leftPlaceholder: Embedded information for left placeholder
+    ///     - rightPlaceholder: Embedded information for right placeholder
+    ///     - imagePlaceholder: Embedded information for name image url placeholder
     
     
     init(notes: String = "Notes:", type: String = "Type: ", left: String = "Left:   ", right: String = "Right:", notesPlaceholder: String = "Add Some Notes Here",namePlaceholder: String = "Insert Name", countryPlaceholder: String = "Insert Country", typePlaceholder: String = "Insert Type Characteristic", leftPlaceholder: String = "Insert Left Characteristic", rightPlaceholder: String = "Insert Image URL", imagePlaceholder: String = "Insert Image URL"){
