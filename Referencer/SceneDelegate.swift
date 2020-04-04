@@ -18,12 +18,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     // Initialize Wave instances to be appended to waveList
     
-    let wave = Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "One of the best slabs in the world", right: "Death", image: "teahupoo")
-    let wave1 = Wave(name: "Nazare", country: "Portugal", type: "Big Wave", left: "Left or right, you will die", right: "Yes, good luck", image: "nazare")
-    let wave2 = Wave(name: "Skeleton Bay", country: "Namibia", type: "Left Point Break", left: "Runs for days", right: "There is no right", image: "skeletonbay")
-    let wave3 = Wave(name: "Snapper Rocks", country: "Australia", type: "Right Point Break", left: "This wave peels right", right: "World Class When it's pumping", image: "snapper")
-    let wave4 = Wave(name: "The Wedge", country: "The States", type: "Monstrous Shorie", left: "This left is a insane", right: "The right is possible to make...?", image: "wedge")
-    let wave5 = Wave(name: "Cape Fear", country: "Australia", type: "Big Wave", left: "Not an Option", right: "The Mutant pushes off a right hand point", image: "fear")
+    let wave = Wave(name: "Teahupo'o", country: "Tahiti", type: "Reef Break", left: "One of the best slabs in the world", right: "Death", staticImage: "teahupoo")
+    let wave1 = Wave(name: "Nazare", country: "Portugal", type: "Big Wave", left: "Left or right, you will die", right: "Yes, good luck", staticImage: "nazare")
+    let wave2 = Wave(name: "Skeleton Bay", country: "Namibia", type: "Left Point Break", left: "Runs for days", right: "There is no right", staticImage: "skeletonbay")
+    let wave3 = Wave(name: "Snapper Rocks", country: "Australia", type: "Right Point Break", left: "This wave peels right", right: "World Class When it's pumping", staticImage: "snapper")
+    let wave4 = Wave(name: "The Wedge", country: "The States", type: "Monstrous Shorie", left: "This left is a insane", right: "The right is possible to make...?", staticImage: "wedge")
+    let wave5 = Wave(name: "Cape Fear", country: "Australia", type: "Big Wave", left: "Not an Option", right: "The Mutant pushes off a right hand point", staticImage: "fear")
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

@@ -13,7 +13,7 @@ import SwiftUI
 struct DetailView: View {
     // @ObservableObject variable created for the purpose of Binding with TextFields
     @ObservedObject var wave: Wave
-
+    // dvm or Detail View Model stores all embedded text information. This includes placeholders and generic text which will be displayed on page. 
     var dvm: DetailViewModel
     var body: some View {
                 ZStack{
@@ -23,7 +23,7 @@ struct DetailView: View {
                             .fontWeight(.bold).foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -60)
                         TextField(dvm.notesPlaceholder, text: $wave.notes).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle())
                         TextField(dvm.imagePlaceholder, text: $wave.imageURL).offset(y: -70).textFieldStyle(RoundedBorderTextFieldStyle())
-                        wave.displayImage().resizable().aspectRatio(contentMode: .fit).frame(width: 370.0).border(Color(hue: 0.584, saturation: 0.889, brightness: 0.504), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).offset(y: -70)
+                        wave.displayImageDetail().resizable().aspectRatio(contentMode: .fit).frame(width: 370.0).border(Color(hue: 0.584, saturation: 0.889, brightness: 0.504), width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).offset(y: -70)
                         TextField(dvm.namePlaceholder, text: $wave.name)
                             .font(.largeTitle)
                             .foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 0.9)).offset(y: -70)

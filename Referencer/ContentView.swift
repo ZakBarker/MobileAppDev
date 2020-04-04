@@ -8,9 +8,10 @@
 
 import SwiftUI
 
-// ContentView receives waveList data structure from Scene Delegate.swift. It then creates a NavigationView which houses the MasterView and passes the waveList structure to the MasterView for processing.
+// ContentView receives View Model data structure from Scene Delegate.swift. It then creates a NavigationView which houses the MasterView and passes the View Model structure to the MasterView for processing. Also provides an Add New Wave Function to update Model with a UI event.
 
 struct ContentView: View {
+    // View Model stores all information to be displayed in the View
     @ObservedObject var viewModel: ViewModel
     var body: some View {
         NavigationView{
