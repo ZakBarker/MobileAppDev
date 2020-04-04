@@ -91,9 +91,18 @@ class Wave: ObservableObject, Identifiable {
             else{
                 return Image(self.staticImage)
         }
-        // If image URL exists within imageCache, display image - else display placeholder image
+        // Also convert dynamic Image URL
+        guard let dynamicUrl = URL(string: self.dynamicImage)
+            else{
+                return Image(self.staticImage)
+        }
+        // If image URL exists within imageCache, display image - else display either placeholder image or dynamic image.
         if let img = self.imageCache[url] {
             return img
+        }
+            // First check if dynamic URL already exists before reverting to placeholder image
+        else if let dynamicImg = self.imageCache[dynamicUrl]{
+            return dynamicImg
         }
         else{
             return Image(self.staticImage)
